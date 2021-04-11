@@ -1,0 +1,6 @@
+"002729","3093","23","@CGIDIRS.htaccess","GET","200","","","","","Contains authorization information","",""
+"002730","3093","23","@CGIDIRS.htaccess.old","GET","200","","","","","Backup/Old copy of .htaccess - Contains authorization information","",""
+"002731","3093","23","@CGIDIRS.htaccess.save","GET","200","","","","","Backup/Old copy of .htaccess - Contains authorization information","",""
+"002732","3093","23","@CGIDIRS.htaccess~","GET","200","","","","","Backup/Old copy of .htaccess - Contains authorization information","",""
+"002733","3093","23","@CGIDIRS.htpasswd","GET","200","","","","","Contains authorization information","",""
+"002734","3093","23","@CGIDIRS.passwd","GET","200","","","","","Contains authorization information","",""

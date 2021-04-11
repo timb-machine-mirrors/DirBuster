@@ -1,0 +1,44 @@
+<!-- 
+ * Copyright 2007 James Fisher
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301 USA
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  </head>
+  <body>
+      <h1>FAQ</h1>
+      <h2>I wish to test an appliction that requires authentication can DirBuster do this?</h2>
+      <p>Yes</p>
+      <p>If the application is using basic, digest or NTLM auth, you can add the required credentials via Options -> Advanced Options -> Authentication Options</p>
+      <p>If the application auth is done via a HTML form, the session cookie set by the applicaiton can be added.  This can be done via Options -> Advanced Options -> Scan Options -> Add Custom Header</p>
+      <h2>Why do the DirBuster lists contain explicit words?</h2>
+      <p>It will come as no surprise to you all that the internet is full of porn, thus it not surprising that the spider used to generate the lists visited a few along the way. Thus there are explicit words contained within the lists. My stand point on this is simple, this tool was designed to used as part of legitimate security testing, and if there are directories/files based on explicit words, clients would want to know!!</p>
+      <h2>DirBuster is finding too much stuff, how do I make it more managable(sp?)</h2>
+      <p>This is normally due to the HTML parsing find lots of links.  If DirBuster is finding too much turn off the HTML parsing, this can be done via Options -> Parse HTML.</p>
+      <h2>Can Dirbuster perform is tests via a proxy?</h2>
+      <p>Yes - Options -> Advanced Options -> HTTP Options</p>
+      <h2>Why does DirBuster keep pausing it's self?</h2>
+      <p>If the server under test is stuggerling to cope with the traffic, or you accidentlly pull your net work cable out, Dirbuster will pause it self after 20 conceutive errors.  If this keeps happending, It is suggested that you turn the number of threads down.</p>
+      <h2>I'm not sure if DirBuster has a bug, the interface just appears to hang</h2>
+      <p>All error are pushed to stout, so please restart dirbuster from the command line<br><br>
+          <i>java -jar DirBuster-&lt;version&gt;.jar</i><br><br>
+      You will now be able to see all errors that have been produced.  If java stack traces are being produced please report them.<br><br>
+      Help -> Report a bug</p>
+  </body>
+</html>
